@@ -1,0 +1,54 @@
+<!-- Modal -->
+<!-- <div class="modal fade" id="formModal" tabindex="-1" role="dialog" aria-labelledby="judulModal" style="position=top"
+            aria-hidden="true">
+            <div class="modal-dialog" role="document" style="background-color:yellow">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="judulModal"><br><br><br>Tambah Data Restaurant</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <form action="<?= base_url('restaurant/tambah'); ?>" method="post">
+                            <div class="form-group">
+                                <label for="nama">Nama</label>
+                                <input type="text" class="form-control" name="nama" placeholder="Nama Restaurant">
+                            </div>
+                            <div class="form-group">
+                                <label for="alamat">Alamat</label>
+                                <input type="text" class="form-control" name="alamat" placeholder="Alamat Restaurant">
+                            </div>
+                            <div class="form-group">
+                                <label for="nama">Kota</label>
+                                <input type="text" class="form-control" name="kota" placeholder="Kota Restaurant">
+                            </div>
+                            <div class="form-group">
+                                <label for="review">Deskripsi</label>
+                                <textarea class="form-control" id="review" name="deskripsi" rows="8"
+                                    placeholder="Deskripsi Restaurant"></textarea>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                <button type="submit" class="btn btn-primary">Tambah Data</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div> 
+</div> -->
+
+<!-- <ul class="list-group">
+                        <h3 class="font-weight-light text-warning">Reviews (banyaknya)</h3> <br>
+                        <!-- <?php foreach ($restaurant as $rst) : ?> -->
+                        <li class="list-group-item">
+                            <?= $restaurant['komentar'] ?>
+                            <!-- <a href="<?= base_url(); ?>mahasiswa/hapus/<?= $mhs['id']; ?>" class="badge badge-danger float-right" onclick="return confirm('yakin?');">hapus</a>
+                                    <a href="<?= base_url(); ?>mahasiswa/ubah/<?= $mhs['id']; ?>" class="badge badge-success float-right">ubah</a>
+                                    <a href="<?= base_url(); ?>mahasiswa/detail/<?= $mhs['id']; ?>" class="badge badge-primary float-right">detail</a> -->
+                        </li>
+                        <!-- <?php endforeach; ?> -->
+                    </ul> -->
+                    <?php $data['user'] = $this->db->get_where('user', ['username' => $this->session->userdata('username')])->row_array();
+                            if ($data['user']) { ?>
